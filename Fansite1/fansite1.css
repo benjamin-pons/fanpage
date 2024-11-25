@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+.sommaire {
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #999999; 
+    width: 250px;
+    height: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    color: crimson; /* Bleu par défaut */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Rend le texte plus épais */
+    }
+
+.link { 
+    color: #FF0000; 
+}
