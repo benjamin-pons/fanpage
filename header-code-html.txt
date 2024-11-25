@@ -1,0 +1,12 @@
+<header>
+        <div class="menu-container">
+            <a href="index.html"><img src="image/logo-placeholder-image.png" alt="Logo Fansite"></a>
+            <button class="menu-button">Menu</button>
+            <div class="menu-dropdown">
+                <a href="article1.html">Artiste 1</a>
+                <a href="article2.html">Artiste 2</a>
+                <a href="article3.html">Artiste 3</a>
+                <a href="article4.html">Artiste 4</a>
+            </div>
+        </div>
+</header>
