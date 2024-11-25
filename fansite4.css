@@ -3,27 +3,13 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-aside {
-    height: auto;
-    width: 18%;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    background-color: #999999; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0px;
-    color: crimson; /* Bleu par défaut */
-    text-decoration: none; /* Supprime le soulignement */
-    font-weight: bold; /* Rend le texte plus épais */
+body{
+    background-color: #131313;
 }
 
 header {
     height: 75px;
-    background-color: #737882;
+    background-color: rgba(0, 0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: row;
@@ -56,7 +42,7 @@ header {
     /* Style du bouton */
     .menu-button {
         height: 75px;
-        background-color: #999999;
+        background-color: #131313;
         color: white;
         padding: 10px 20px;
         font-size: 16px;
@@ -102,12 +88,69 @@ header {
     }
 }
 
+.content-container {
+    padding-top: 10px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
 
+aside {
+    margin-left: 1%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 18%;
+    height: auto;  /* Largeur de la barre latérale */
+    padding: 20px;
+    background-color: #313131;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
+.left-section a{
+    font-size: 1.3rem;
+}
+
+.left-section a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+h5{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.right-section {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    height: 1.3px;
+    background-color: rgb(86, 86, 86);
+}
 
 /*FOOTER*/
 footer{
-        background-color: rgb(32, 32, 32);
+        background-color: #131313;
         color: white;
         width: 100%;
         height: 250px;
