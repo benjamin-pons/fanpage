@@ -1,6 +1,6 @@
 header {
     height: 75px;
-    background-color: #737882;
+    background-color: rgba(0, 0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ header {
     /* Style du bouton */
     .menu-button {
         height: 75px;
-        background-color: #999999;
+        background-color: #131313;
         color: white;
         padding: 10px 20px;
         font-size: 16px;
@@ -77,5 +77,4 @@ header {
     .menu-button:hover {
         background-color: #dbdbdb;
     }
-
 }
