@@ -152,6 +152,7 @@ hr{
             justify-content: center;
             flex-direction: column;
             margin-left: 20px;
+            margin-bottom: 30px;
             width: 300px;
             height: 500px;
             border-radius: 10px;
@@ -185,10 +186,88 @@ hr{
         }
     }
 
+    /* Galerie d'image  */
+    .galerie { 
+        margin-top: 30px;
+        padding: 15px;
+        background-color: rgb(46, 46, 46);
+        border-radius: 10px;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 1px;
+
+        img {
+            max-height: 200px;
+            width: auto;
+            transition: transform .3s ease;
+            transition: filter .5s ease;
+        }
+
+    }
+
+    .galerie:hover {
+        img:hover {
+            transform: scale(1.01);
+            z-index: 1;
+        }
+        img:not(:hover) {
+            filter: blur(3px);
+        }
+    }
+
+    /* Videos */
+    .section-video{
+
+        margin-top: 30px;
+        padding: 15px;
+        background-color: rgb(46, 46, 46);
+        border-radius: 10px;
+        width: 1200px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+
+        p {
+            max-width: 750px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+       
+        .video {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+            
+        }
+
+        img{
+            max-height: 200px;
+            width: 300px;
+            transition: transform .3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
+#titre-galerie {
+    display: flex;
 
-
+}
 
 body{
     background-color: #131313;
