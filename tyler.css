@@ -136,7 +136,59 @@ hr{
         background: linear-gradient(90deg, rgba(13,133,72,1) 0%, rgba(2,2,47,0.01) 71%);
     }
 
+    /* Event  */
+
+    #liste-event {
+
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        
+
+        .event {
+            display: flex;
+            background-color: rgb(46, 46, 46);
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 20px;
+            width: 300px;
+            height: 500px;
+            border-radius: 10px;
+
+            transition: transform .3s ease;
+            
+
+            img {
+                display: flex;
+                align-self: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                height: 400px;
+                width: 250px;
+                object-fit: cover;
+                
+            }
+
+            p {
+                display: flex;
+                align-self: center;
+                color: white;
+                font-size: 18px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+        }
+
+        .event:hover {
+            transform: scale(1.1);
+        }
+    }
+
 }
+
+
+
 
 body{
     background-color: #131313;
