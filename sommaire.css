@@ -12,6 +12,8 @@ aside {
     font-weight: bold;
     border-radius: 10px;
 
+    position: sticky;
+    top: 0;
 
     h5{
         text-align: center;
