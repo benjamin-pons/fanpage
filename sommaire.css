@@ -13,7 +13,7 @@ aside {
     border-radius: 10px;
 
     position: sticky;
-    top: 0;
+    top: 10px;
 
     h5{
         text-align: center;
@@ -40,7 +40,12 @@ aside {
 .right-section {
     width: 80%;
     display: flex;
-    text-align: center;
     justify-content: end;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .left-section{
+        display: none;
+    }
 }
