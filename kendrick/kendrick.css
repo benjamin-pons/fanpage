@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #ffcc00;   
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Biography Section */
+.biography {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Discography */
+.discography {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.album-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.album-grid a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+.album-grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.album-grid img:hover {
+    transform: scale(1.1);
+}
+
+.album-grid p {
+    margin-top: 5px;
+}
+
+/* Interactive Disk */
+.interactive-disk {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#disc {
+    width: 150px;
+    height: 150px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Videos */
+.videos {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espace entre les vidéos */
+    flex-wrap: wrap; /* Permet le retour à la ligne pour petits écrans */
+    padding: 20px;
+}
+
+.video-item {
+    max-width: 400px; /* Limite la largeur des vidéos */
+    text-align: center;
+}
+
+video {
+    width: 100%; /* Ajuste la vidéo à la largeur du conteneur */
+    border-radius: 10px; /* Coins arrondis pour un design plus doux */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombre élégante */
+    display: block;
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+
+/* News */
+.news {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.news-item {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}

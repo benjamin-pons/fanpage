@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #131313;
+}
+
+hr{
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    height: 1.3px;
+    background-color: rgb(86, 86, 86);
+    
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .selection-page {
+
+        margin-bottom: 50px;
+        margin-top: 50px;
+        max-width: 850px;
+        
+        gap: 15px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        h2{
+            font-size: 40px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;   
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        .page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(46, 46, 46);
+            height: 470px;
+            width: 320px;
+            border-radius: 20px;
+
+            transition: transform 0.3s ease;
+
+            img{
+                height: 450px;
+                width: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+                transition: filter 0.3s ease;
+                filter: brightness(0.7)
+            }
+        }
+
+        .page:hover {
+            transform: scale(1.05);
+
+            img{
+                filter: brightness(1.0)
+            }
+        }
+    }
+}
+
