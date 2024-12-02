@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+    html {
+        max-width: 100%; /* Permet au contenu de s'adapter à l'écran */
+        margin: 0; 
+        background-color: black;
+    }
+
+    h1, h2 {
+        font-size: 24px; 
+        text-align: center;
+    }
+    .contenu {
+        width: auto; 
+        margin: 0 10px; 
+        font-size: 18px; 
+    }
+
+    .actualite-section {
+        flex-direction: column; /* Passe les éléments en mode colonne */
+        align-items: center; 
+    }
+
+    .actualite-image {
+        max-width: 100%;
+    }
+
+    .discographie {
+        flex-wrap: wrap; /* Les albums s'adaptent à la largeur */
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .album {
+        width: 100%; 
+        margin: 10px 0; 
+        font-size: 16px;
+    }
+
+    .Partie-réalisations,
+    .Partie-evenements,
+    .Partie-Photovideo,
+    .partie-fan,
+    .partie-reseau {
+        font-size: 36px; 
+        text-align: center; 
+        margin: 20px 0;
+    }
+
+    .colonne {
+        flex-direction: column; 
+        align-items: center;
+        margin: 0;
+    }
+
+    .clip video {
+        max-width: 100%; /* La vidéo s'adapte à l'écran */
+        border-width: 2px; 
+    }
+
+    .fan {
+        flex-direction: column; 
+        margin: 20px 0;
+    }
+
+    .image-container,
+    .image-container-2 {
+        flex-wrap: wrap; /* Les images s'adaptent automatiquement */
+        gap: 10px;
+    }
+
+    #txtlien {
+        font-size: 20px; /* Réduction de la taille du texte des liens */
+        padding: 10px; /* Ajoute un peu d'espace autour du texte */
+    }
+
+    img {
+        max-width: 100%; /* Les images s'adaptent à la largeur de l'écran */
+        height: auto; /* Conserve le ratio de l'image */
+    }
+}
+
