@@ -1,0 +1,207 @@
+/*Paramètre Général*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #131313;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header Menu*/
+header {
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+
+    img{
+        padding-top: 30px;
+        height: 70px;
+        width: 70px;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:#ffffff; 
+        text-decoration:none; 
+        cursor:pointer;  
+    }
+
+    /* Style de base pour le conteneur */
+    .menu-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Style du bouton */
+    .menu-button {
+        height: 75px;
+        background-color: #131313;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: -28px;
+
+    }
+
+    /* Style de la liste déroulante */
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        top: 103px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Liens dans le menu */
+    .menu-dropdown a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Changement de couleur au survol */
+    .menu-dropdown a:hover {
+        background-color: #ddd;
+    }
+
+    /* Afficher le menu au survol */
+    .menu-container:hover .menu-dropdown {
+        display: block;
+    }
+
+    /* Style bouton au survol */
+    .menu-button:hover {
+        background-color: #dbdbdb;
+    }
+}
+
+
+h1{
+    padding: 20px 0 20px 0;
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.artiste {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.artiste img{
+    width: 20%;
+    height: 450px;
+    opacity: 0.4;
+    transition: 0.8s ease;
+}
+.artiste h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+
+.text-1 {
+    position: absolute;
+    top: 75%;
+    left: 16%;
+}
+.text-2 {
+    position: absolute;
+    top: 75%;
+    left: 31%;
+}
+.text-3 {
+    position: absolute;
+    top: 75%;
+    left: 51.5%;
+}
+.text-4 {
+    position: absolute;
+    top: 75%;
+    left: 78%;
+}
+#sch:hover + .text-1{
+    display: block;
+}
+#kendrick:hover + .text-2{
+    display: block;
+}
+#tyler:hover + .text-3{
+    display: block;
+}
+
+#laylow:hover + .text-4{
+    display: block;
+}
+
+.artiste img:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #131313;
+    color: white;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-link{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.social-link{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
